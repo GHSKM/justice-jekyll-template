@@ -1,0 +1,63 @@
+---
+pages:
+- _staff_members/john-doe.md
+- _staff_members/jane-doe.md
+hide_body: false
+fields:
+- name: name
+  label: Name
+  type: text
+  hidden: false
+  default: ''
+- name: image
+  label: Image
+  type: text
+  hidden: false
+  default: "/uploads/building.jpg"
+- name: credentials
+  label: Credentials
+  type: text
+  hidden: false
+  default: ''
+- name: phone_extension
+  label: Phone extension
+  type: text
+  hidden: false
+  default: ''
+- name: date
+  label: Date
+  type: datetime
+  hidden: false
+  default: ''
+- name: layout
+  label: Layout
+  type: text
+  hidden: false
+  default: page
+- name: background_image_path
+  label: Background image path
+  type: text
+  hidden: false
+  default: "/uploads/building.jpg"
+- name: _options
+  label: " options"
+  type: field_group
+  fields:
+  - name: image
+    label: Image
+    type: field_group
+    fields:
+    - name: width
+      label: Width
+      type: text
+      hidden: false
+      default: ''
+    - name: height
+      label: Height
+      type: text
+      hidden: false
+      default: ''
+    hidden: false
+    default: ''
+  hidden: false
+  default: 
